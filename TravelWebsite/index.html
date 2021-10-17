@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="pl">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="keywords" content="podróże, wycieczki, zwiedzanie" />
+    <meta
+      name="description"
+      content="Na tej stronie możesz zarezerwować swoje wymarzone wakacje"
+    />
+    <title>Dżoana's travel</title>
+
+    <link rel="icon" type="image/png" href="./favicon.png" />
+    <link rel="stylesheet" href="style.css" />
+    <link href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet">
+  </head>
+    <body>
+    <header>
+      <div >
+        <img src="travel_logo.png" class="travel_logo" alt="travel logo" />
+    </div>
+      
+
+      <nav>
+        <ul class="nav_menu">
+          <li><a href="#">O mnie</a></li>
+          <li><a href="#">Galeria</a></li>
+          <li><a href="#">Wspomnienia z podróży</a></li>
+          <li><a href="#">Współpraca</a></li>
+        </ul>
+
+        <button class="contact_button">
+          <a href="#contact_section">Kontakt</a>
+        </button>
+        <!-- 5. ten 'a' dac na cala szerokosc i wysokosc buttona - dodac klase i stylowanie -->
+      </nav>
+    </header>
+    <main>
+      <section class="hero_section">
+        <div class="hero_text">
+          <!-- 7. hero-text ale odnosi sie do diva - pudełka - lepiej dac hero-wrapper albo ostylowac sam tekst albo ostylowac i diva i tekst-->
+          <h1>Let's start the journey</h1>
+          <h3>Już dziś zaplanuj podróż, o jakiej zawsze marzyłeś</h3>
+          <button class="button_start">Rozpocznij przygodę</button>
+        </div>
+      </section>
+      <section class="contact_form">
+        <h1>Contact Us</h1>
+        <div class="contact_form_fields">
+        <div class="contact_labels">
+          <label>Imię:</label>
+          <input type="text" name="" value="" placeholder="Wpisz swoje imię">
+        </div>
+          <div class="contact_labels">
+            <label>Nazwisko</label>
+            <input type="text" placeholder="Wpisz swoje nazwisko">
+          </div>
+          <div class="contact_labels">
+            <label>Wiadomość:</label>
+            <textarea></textarea>
+          </div>
+        
+        </div>
+        <a class="contact_btn">Send</a>
+      </div>
+    </section>
+     
+      <div class="social_menu">
+        <ul>
+          <li><a href="#"><i class="fa fa-facebook"></i></a></li>
+          <li><a href="#"><i class="fa fa-twitter"></i></a></li>
+          <li><a href="#"><i class="fa fa-instagram"></i></a></li>
+          <li><a href="#"><i class="fa fa-linkedin"></i></a></li>
+        </ul>
+      </div>
+    </main>
+  </body>
+</html>
+
+<!-- 2. Byl burdel w znacznikach - dwa otwierajace <form> -->
+<!-- 3. Atrybut 'name' dla inputów -->
+
+<!-- BEM -->

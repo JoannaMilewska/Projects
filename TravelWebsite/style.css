@@ -1,0 +1,206 @@
+body {
+  background-color: silver;
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  width: 100vw;
+}
+
+/* zmienne css: */
+/* :root {
+  /* --zmienna: wartosc; }*/
+
+html {
+  scroll-behavior: smooth;
+}
+.travel_logo {
+  width: 100px;
+  height: 100px;
+}
+.contact_button {
+  border: none;
+  padding: 10px 25px;
+  /* ten padding sprawia, ze nie mozna dac 100% szerokosci i wysokosci w 'a' wewnetrz buttona 'contact' */
+  background-color: rgb(199, 121, 97);
+  color: honeydew;
+  font-size: 20px;
+  border-radius: 15px;
+  transition: 0.3s;
+  cursor: pointer;
+}
+
+/* klasa */
+.contact_button a {
+  height: 100%;
+  width: 100%;
+}
+
+.contact_button:hover {
+  background-color: rgb(228, 191, 149);
+  color: darkblue;
+}
+
+.contact_button:active {
+  transform: scale(0.9);
+  transition: 0.5s;
+}
+
+/* klasa dla 'a' */
+a {
+  text-decoration: none;
+  color: whitesmoke;
+  font-size: 20px;
+}
+
+/* klasa dla headera */
+header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 15px 10%;
+  background-color: #1f0542;
+}
+
+/* klasa dla li */
+.nav_menu li {
+  display: inline-block;
+  padding: 0px 20px;
+}
+
+.nav_menu {
+  list-style: none;
+  display: inline-block;
+  padding: 0px 20px;
+}
+
+/* lepiej dac klase dla 'a' */
+.nav_menu li a:hover {
+  color: rgb(228, 191, 149);
+}
+
+/* tak samo - klasa dla a */
+.nav_menu li a {
+  transition: all 0.3s ease 0s;
+  /* transistion dajemy tylko na to, czego dotyczy */
+}
+
+.hero_section {
+  align-items: center;
+  display: flex;
+  justify-content: center;
+  text-align: center;
+  width: 1600px;
+  /* fajnie jest wyciaganac takie informacje, ktore beda wartosciami staylymi w calej apce do zmiennych */
+  height: 700px;
+  color: whitesmoke;
+  background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)),
+    url("plane.jpg");
+  background-size: cover;
+  background-position: center center;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  width: 100vw;
+}
+
+.hero_section h1 {
+  font-size: 60px;
+}
+
+.hero_section h2 {
+  font-size: 30px;
+}
+
+.button_start {
+  border-radius: 15px;
+  border: 3px solid white;
+  cursor: pointer;
+  padding: 15px 25px;
+  transition: 0.3s;
+  /* podajemy czego dotyczy transition - wszedzie w kodzie */
+  background-color: transparent;
+  color: whitesmoke;
+  font-size: 20px;
+}
+
+.button_start:hover {
+  background-color: rgb(228, 191, 149);
+  color: darkblue;
+}
+
+.button_start:active {
+  transform: scale(0.9);
+  transition: 0.5s;
+}
+.contact_form {
+  width: 100%;
+  background: #f1f1ff;
+  padding: 30px 40px;
+  box-sizing: border-box;
+  border-radius: 8px;
+  text-align: center;
+}
+.contact_form_fields{
+  width:80%;
+  margin:0 auto;
+}
+.contact_labels {
+  border: 1px solid gray;
+  margin: 8px 0;
+  padding: 12px 18px;
+  border-radius: 8px;
+}
+.contact_labels label {
+  display: block;
+  text-align: left;
+  color: #333;
+  text-transform: uppercase;
+  font-size: 14px;
+}
+.contact_labels input,
+.contact_labels textarea {
+  width: 100%;
+  border: none;
+  background: none;
+  outline: none;
+  font-size: 18px;
+  margin-top: 6px;
+}
+
+/* id tylko do tego scrollowania, nie do stylowana */
+/* dac na h1 klase i tyle, cos typu 'contact-section-header' */
+
+.social_menu ul {
+  top: 50%;
+  left: 50%;
+  transform: translateX(-50%);
+position: absolute;
+  margin: 0;
+  padding: 0;
+  display: flex;
+}
+.social_menu ul li {
+  list-style: none;
+  margin: 0 15px;
+}
+.social_menu ul li .fa {
+  font-size: 30px;
+  line-height: 60px;
+  transition: 0.6s;
+  color: #000;
+}
+.social_menu ul li a {
+  display: block;
+  width: 60px;
+  height: 60px;
+  border-radius: 50%;
+  background-color: #fff;
+  text-align: center;
+  box-shadow: 0 5px 4px rgba(0, 0, 0, 0.5);
+  transition: 0.6s;
+}
+.social_menu ul li a:hover {
+  transform: translate(0, -10px);
+}
+.social_menu {
+  position: relative;
+}
