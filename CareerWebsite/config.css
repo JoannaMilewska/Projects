@@ -1,0 +1,17 @@
+:root{
+    --green:#21c7a3;
+    --grey:#4b4b4b;
+    --black:#121212;
+    --orange:#f7b329;
+    --white:#ffffff;
+
+    --screen-s:768px;
+    --screen-m:1200px;
+
+}
+body{
+ font-family: 'Open Sans', sans-serif;
+ margin: 0;
+ padding: 0;
+ box-sizing: border-box;
+}
